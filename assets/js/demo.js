@@ -42,7 +42,7 @@ function ViewModel(map){
                 mapMarkers[item.index].setAnimation(null);
             }, 1200);
             infowindows[item.index].open(map, mapMarkers[item.index]);
-        }
+        };
         ko.utils.arrayForEach(result, function(marker) {    
             // Create a latLng literal object.
             var singleLatLng = {lat: marker.lat, lng: marker.lng};	
